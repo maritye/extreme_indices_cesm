@@ -17,30 +17,31 @@ Three notebooks to extract data from campaign storage, calculate indices, calcul
 
 ## Indices
 ### Temperature
-Annual frost days (FD, daily minimum <0C)
-Annual tropical nights (TR, daily minimum >25C)
-Annual icing days (ID, daily maximum <0C)
-Annual summer days (SU
-Annual max daily max temp (TXx)
-Annual min daily max temp (TXn)
-Annual max daily min temp (TNx)
-Annual min daily min temp (TNx)
-Annual Warm Days (TX90, daily maximum >90th Percentile)
-Annual Warm Nights (TX90, daily maximum >90th percentile)
-Annual Cool Days (TN90, daily minimum <10th percentile)
-Annual Cool Nights (TN90, daily minimum <10th percentile)
+Annual frost days (FD, daily minimum <0C)  
+Annual tropical nights (TR, daily minimum >25C)  
+Annual icing days (ID, daily maximum <0C)  
+Annual summer days (SU)   
+Annual max daily max temp (TXx)  
+Annual min daily max temp (TXn)  
+Annual max daily min temp (TNx)  
+Annual min daily min temp (TNx)  
+Annual Warm Days (TX90, daily maximum >90th Percentile)  
+Annual Warm Nights (TX90, daily maximum >90th percentile)  
+Annual Cool Days (TN90, daily minimum <10th percentile)  
+Annual Cool Nights (TN90, daily minimum <10th percentile)  
 
 ### Precipitation
 
-Annual maximum 1-day precipitation (Rx1day)
-Annual maximum 5-day precip (Rx5day)
-Annual frequency of days >10mm precip (R10mm)
-Annual frequency of day >20mm precip (R20mm)
-Annual frequency of days >n mm precip (Rnmm)
-Annual total precipitation (PRCPTOT)
-Annual Simple daily intensity index (SDII, ratio of total precipitation on wet days)
-Annual longest dry spell (CDD, consecutive days <1mm)
-Annual longest wet spell (CWD, consecutive days >1mm)
-Annual total rain from days above a threshold (e.g. >95th percent of wet day precipitation)
-Annual frequency of days above a threshold
+Annual maximum 1-day precipitation (Rx1day)  
+Annual maximum 5-day precip (Rx5day)  
+Annual frequency of days >10mm precip (R10mm)  
+Annual frequency of day >20mm precip (R20mm)  
+Annual frequency of days >n mm precip (Rnmm)  
+Annual total precipitation (PRCPTOT)  
+Annual Simple daily intensity index (SDII, ratio of total precipitation on wet days)  
+Annual longest dry spell (CDD, consecutive days <1mm)  
+Annual longest wet spell (CWD, consecutive days >1mm)  
+Annual total rain from days above a threshold (e.g. >95th percent of wet day precipitation)  
+Annual frequency of days above a threshold  
 
+   
