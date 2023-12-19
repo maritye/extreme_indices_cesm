@@ -1,7 +1,3 @@
-## Essential checklist for your repository
-- [ ] Update the environment.yml file in include the required libraries/packages
-- [ ] Your analysis code/notebooks!
-
 ## Extreme Indices in CESM
 These notebooks form the basis of Tye's workflow to extract and analyse extreme precipitation and temperature indices in CESM under climate change, and in response to climate interventions (e.g. Stratospheric Aerosol Injection).  
 They are not necessarily the most efficient scripts! They are also submitted as is, with possible errors. If you find a glaring error, please let me know :)
