@@ -1,49 +1,46 @@
-# analysis_project_template
-This is a sample template meant to be used for workflows centered around notebooks
-
-## Why you should use this template
-This template is meant to give you the basic setup of an "analysis" repository, focused on storing notebooks or other pieces of scientific code/documentation. This repository is not meant to be a "one size fits all" repository, but rather, a starting point from which the user can build upon.
-
 ## Essential checklist for your repository
-- [ ] Software license
-- [ ] Detailed readme
 - [ ] Update the environment.yml file in include the required libraries/packages
 - [ ] Your analysis code/notebooks!
 
-## Choosing a license for this repository
-There are a variety of software licenses to choose from. The default for this
-repository is the [MIT License](https://opensource.org/licenses/MIT) which is short
-and to the point. If you are interested in learning more about which license is
-best for you, check out [this resource](https://choosealicense.com/) to help you
-determine which is best for your specific needs, or consult [UCAR Legal](https://internal.ucar.edu/counsel/about)
+## Extreme Indices in CESM
+These notebooks form the basis of Tye's workflow to extract and analyse extreme precipitation and temperature indices in CESM under climate change, and in response to climate interventions (e.g. Stratospheric Aerosol Injection).  
+They are not necessarily the most efficient scripts! They are also submitted as is, with possible errors. If you find a glaring error, please let me know :)
 
-## What to include in your README (README.md)
-Once you copy over this template and choose your license, you should populate your README file. This file serves as a landing page for your repository and should provide the following:
-- Title of the project
-- Introduction and overview of what the analysis covers
-- How to contribute
-- How to reproduce the conda environment
+The extreme indices were defined by the WCRP Extreme Task force for Climate Change Detection and are described in full by Zhang et al. 2011 (10.1002/wcc.147) among others.  
 
-An example of this is given below
-```
-# Climate-Analysis
-This is a repository meant to show how to do climate analysis.
+## Contents
+Two function files leverage functions created by bgroenks96 https://github.com/bgroenks96
+* precex_func
+* tempex_func
 
-## Contributing
-Clone this repository to your account, then create your own branch to work in
+Three notebooks to extract data from campaign storage, calculate indices, calculate anomalies from a base climate and the significance of changes. A notebook for plotting results.
 
-"git checkout -b <nameofyourbranch>"
+## Indices
+### Temperature
+Annual frost days (FD, daily minimum <0C)
+Annual tropical nights (TR, daily minimum >25C)
+Annual icing days (ID, daily maximum <0C)
+Annual summer days (SU
+Annual max daily max temp (TXx)
+Annual min daily max temp (TXn)
+Annual max daily min temp (TNx)
+Annual min daily min temp (TNx)
+Annual Warm Days (TX90, daily maximum >90th Percentile)
+Annual Warm Nights (TX90, daily maximum >90th percentile)
+Annual Cool Days (TN90, daily minimum <10th percentile)
+Annual Cool Nights (TN90, daily minimum <10th percentile)
 
+### Precipitation
 
-## Reproducing the environment
+Annual maximum 1-day precipitation (Rx1day)
+Annual maximum 5-day precip (Rx5day)
+Annual frequency of days >10mm precip (R10mm)
+Annual frequency of day >20mm precip (R20mm)
+Annual frequency of days >n mm precip (Rnmm)
+Annual total precipitation (PRCPTOT)
+Annual Simple daily intensity index (SDII, ratio of total precipitation on wet days)
+Annual longest dry spell (CDD, consecutive days <1mm)
+Annual longest wet spell (CWD, consecutive days >1mm)
+Annual total rain from days above a threshold (e.g. >95th percent of wet day precipitation)
+Annual frequency of days above a threshold
 
-"conda env create -f envs/environment.yml"
-"conda activate environment_name"
-
-
-```
-
-## The importance of software citation and minting a DOI
-Once your repository is built and you have added your analysis, you may want to mint a DOI for your project, so you can share your work with the community AND receive credit for doing so.
-
-Directions on how to mint a DOI for your project can be found on the [NCAR Software Citation Documentation](https://ncar.github.io/software-citation/pages/recommendation/mint-doi.html)
